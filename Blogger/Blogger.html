@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<title> Blog User Interface</title>
-		<link rel="stylesheet" href="Styles/Bloguser.css">
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-		<!--<script src="Scripts/Bloguser.js"></script>-->
+		<link rel="stylesheet" href="Styles/Blogger.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Scripts/Blogger.js"></script>
 	</head>
 	<body>
 		<form>
 		<div class = "blog"> Blog posts:
-			<textarea id= "blogpost" placeholder="Type your Post here"></textarea>
-			<button id = "send">Send</button>
+			<textarea id= "blogposts" placeholder="Type your Post here"></textarea>
+			<button id = "send" onclick="submitMessage(); return false;">Send</button>
 		</div>
 	</form>
 	</body>
