@@ -26,7 +26,7 @@ function navigateTo(contentToDisplay) {
 		xhr.open("GET", "reader.php?categories=" + categories, false);
 		xhr.send();
 		returnblog = JSON.parse(xhr.response);
-		
+		returnblog.reverse();
 		for (var i = 0 ; i < returnblog.length ; i++) {
 			//buitenste array
 			var b = returnblog[i];
