@@ -2,7 +2,7 @@
 header("Content-Type:application/json");
 	$verb = $_SERVER['REQUEST_METHOD'];
 	if ($verb == 'GET') {
-		if (isset($_GET['categories'])) {
+		if (isset($_GET)) {
 			$json_response = returnBlogposts();
 			echo $json_response;
 		} else {
@@ -26,7 +26,7 @@ header("Content-Type:application/json");
 	$result = $connection->query($sql);
 	$answer = array();
 	foreach ($result as $row) {
-		$answer[] = array($row['id'], $row['categories'], $row['blogposts']);
+		$answer[] = array($row['id'], $row['category'], $row['blogposts']);
 	}
 	$json_answer = json_encode($answer);
 	return $json_answer;

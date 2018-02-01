@@ -3,47 +3,38 @@
 	<head>
 		<title> Reader User Interface</title>
 		<link rel="stylesheet" href="Styles/Reader.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="Scripts/reader.js"></script>
+
 	</head>
 	<body>
 		<div>
 
 		<div class="navbar">
 			
-			<div class="nav-element" onclick="navigateTo('blog-content')">
-				<p>Blog</p>
+			<div class="nav-element">
+				<p>My Blog</p>
 			</div>
 
-			<div class="nav-element" id ="last-element" onclick="navigateTo('about-content')">
-				<p>About me</p>
-			</div>
+		</div>
 		</div>
 
-		<div id="about-content" class="content">
-
-			<h1>About me!</h1>
-
-			<p>some information about the blogger</p>
-		</div>
-
-		<div id="blog-content" class="content">
-
-			<section id="categories">
+			<section id="categories-content">
 				<h3>Categories</h3>
 
-				<div class="category-element" onclick="navigateTo('blogpost')">
-					<p onclick="showblog()">Test </p>
+				<div class="category-element">
+					<select id="categories">
+					  <option value="Sport">Sport</option>
+					  <option value="Games">Games</option>
+					  <option value="Countries">Countries</option>
+					</select>
+					<button id = "send" onclick="getBlogpost(); return false;">Send</button>
 				</div>
 			</section>
-
-			<aside class="content">
-
-			</aside>
-
 		</div>
+
 		<div id="blogpost">
-			
-			</div>
+		</div>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Scripts/reader.js"></script>
 	</body>
 </html>
