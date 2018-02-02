@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<title> Blog User Interface</title>
 		<link rel="stylesheet" href="Styles/Blogger.css">
+
 	</head>
+
 	<body>
+
 		<form id="input-post">
-		<div class = "blog"> Blog posts:
-			<textarea id= "blogposts" placeholder="Type your Post here"></textarea>
-			<select id= "categories">
-			  <option value="Sport">Sport</option>
-			  <option value="Games">Games</option>
-			  <option value="Countries">Countries</option>
-			</select>
-			<button id = "send" onclick="submitMessage(); return false;">Send</button>
-		</div>
-	</form>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<div class = "blog"> Blog posts:
+
+				<textarea id= "blogposts" placeholder="Type your Post here"></textarea>
+
+				<select id= "categories">
+				    <option value="Sport">Sport</option>
+				    <option value="Games">Games</option>
+				    <option value="Countries">Countries</option>
+				</select>
+				<button id = "send" onclick="submitMessage(); return false;">Send</button>
+			</div>
+		</form>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="Scripts/Blogger.js"></script>
+
 	</body>
 
 </html>
